@@ -126,6 +126,14 @@ namespace Peacesign__alpha_
 
         private void button9_Click_1(object sender, EventArgs e)
         {
+            Process[] emulatorProcesses = Memory.GetEmulatorProcesses("Project64");
+            Memory.HookEmulatorProcess(emulatorProcesses[0]);
+            Memory.FindBaseAddress();
+
+            if (Core.CameraFrozen)
+                Debug.WriteLine("Camera was already frozen!");
+
+            Core.FixCameraZoomOut();
             Core.FixResetBodyState();
         }
 
@@ -225,6 +233,29 @@ namespace Peacesign__alpha_
                 case "Dead":
                     // dead eyes
                     Core.SetEyeState(Types.EyeState.DEAD);
+                    break;
+            }
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (comboboxX3.Text)
+            {
+                case "Default":
+                    // Default
+                    Core.SetPowerUpState(Types.PowerUpState.DEFAULT);
+                    break;
+                case "Expression 1":
+                    // Expression 1
+                    Core.SetPowerUpState(Types.PowerUpState.VANISH);
+                    break;
+                case "Expression 2":
+                    // Expression 2
+                    Core.SetPowerUpState(Types.PowerUpState.METAL);
+                    break;
+                case "Expression 3":
+                    // Expression 3
+                    Core.SetPowerUpState(Types.PowerUpState.METAL_VANISH);
                     break;
             }
         }

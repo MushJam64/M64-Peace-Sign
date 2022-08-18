@@ -35,8 +35,9 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.comboboxEye = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboboxX3 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -48,7 +49,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(326, 70);
+            this.groupBox1.Size = new System.Drawing.Size(223, 70);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Hand Controls";
@@ -68,7 +69,7 @@
             this.comboboxHands.Location = new System.Drawing.Point(8, 28);
             this.comboboxHands.MaxDropDownItems = 6;
             this.comboboxHands.Name = "comboboxHands";
-            this.comboboxHands.Size = new System.Drawing.Size(312, 23);
+            this.comboboxHands.Size = new System.Drawing.Size(209, 23);
             this.comboboxHands.TabIndex = 10;
             this.comboboxHands.Text = "Fists";
             this.comboboxHands.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
@@ -117,7 +118,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.comboBox2);
+            this.groupBox3.Controls.Add(this.comboboxX3);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox3.Location = new System.Drawing.Point(12, 164);
             this.groupBox3.Name = "groupBox3";
@@ -127,18 +128,22 @@
             this.groupBox3.Text = "X3 Controls (Exmo3)";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
-            // comboBox2
+            // comboboxX3
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Soon"});
-            this.comboBox2.Location = new System.Drawing.Point(6, 28);
-            this.comboBox2.MaxDropDownItems = 6;
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(312, 23);
-            this.comboBox2.TabIndex = 10;
-            this.comboBox2.Text = "Soon";
+            this.comboboxX3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboboxX3.FormattingEnabled = true;
+            this.comboboxX3.Items.AddRange(new object[] {
+            "Default",
+            "Expression 1",
+            "Expression 2",
+            "Expression 3"});
+            this.comboboxX3.Location = new System.Drawing.Point(6, 28);
+            this.comboboxX3.MaxDropDownItems = 6;
+            this.comboboxX3.Name = "comboboxX3";
+            this.comboboxX3.Size = new System.Drawing.Size(312, 23);
+            this.comboboxX3.TabIndex = 10;
+            this.comboboxX3.Text = "Default";
+            this.comboboxX3.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -152,11 +157,23 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label1.Click += new System.EventHandler(this.label1_Click_2);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(241, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 60);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Note: \r\nExmo items like \r\nShyguys Spear is \r\n\"Cap In Hand\"";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(349, 316);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -180,7 +197,8 @@
         private GroupBox groupBox2;
         private ComboBox comboboxEye;
         private GroupBox groupBox3;
-        private ComboBox comboBox2;
+        private ComboBox comboboxX3;
         private Label label1;
+        private Label label2;
     }
 }

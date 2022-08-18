@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\LibV64Core\LibV64Core.csproj" />
+    <ProjectReference Include="..\..\..\..\Documents\GitHub\M64-Peace-Sign\LibV64Core\LibV64Core\LibV64Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Peacesign", "Peacesign\Peacesign.csproj", "{D7B0660F-B4F4-4B98-8CC0-B01D86F80631}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibV64Core", "..\LibV64Core\LibV64Core.csproj", "{9CB7B403-1059-477D-9785-A7E72690729F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibV64Core", "..\..\..\Documents\GitHub\M64-Peace-Sign\LibV64Core\LibV64Core\LibV64Core.csproj", "{BBEDA2D7-9683-4D3A-8255-74DD3577AC24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,14 +23,14 @@ Global
 		{D7B0660F-B4F4-4B98-8CC0-B01D86F80631}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D7B0660F-B4F4-4B98-8CC0-B01D86F80631}.Release|x64.ActiveCfg = Release|Any CPU
 		{D7B0660F-B4F4-4B98-8CC0-B01D86F80631}.Release|x64.Build.0 = Release|Any CPU
-		{9CB7B403-1059-477D-9785-A7E72690729F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9CB7B403-1059-477D-9785-A7E72690729F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9CB7B403-1059-477D-9785-A7E72690729F}.Debug|x64.ActiveCfg = Debug|x64
-		{9CB7B403-1059-477D-9785-A7E72690729F}.Debug|x64.Build.0 = Debug|x64
-		{9CB7B403-1059-477D-9785-A7E72690729F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9CB7B403-1059-477D-9785-A7E72690729F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9CB7B403-1059-477D-9785-A7E72690729F}.Release|x64.ActiveCfg = Release|x64
-		{9CB7B403-1059-477D-9785-A7E72690729F}.Release|x64.Build.0 = Release|x64
+		{BBEDA2D7-9683-4D3A-8255-74DD3577AC24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBEDA2D7-9683-4D3A-8255-74DD3577AC24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBEDA2D7-9683-4D3A-8255-74DD3577AC24}.Debug|x64.ActiveCfg = Debug|x64
+		{BBEDA2D7-9683-4D3A-8255-74DD3577AC24}.Debug|x64.Build.0 = Debug|x64
+		{BBEDA2D7-9683-4D3A-8255-74DD3577AC24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBEDA2D7-9683-4D3A-8255-74DD3577AC24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBEDA2D7-9683-4D3A-8255-74DD3577AC24}.Release|x64.ActiveCfg = Release|x64
+		{BBEDA2D7-9683-4D3A-8255-74DD3577AC24}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
